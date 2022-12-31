@@ -1,3 +1,23 @@
-# week-3-homework
-In my javascript for randomInt I wrote a code which will give a ranom intiger and with the second code of line I made sure that the number will always be to a whole number meaning no decimals.
-With the prompted when the user click the button it will show a quot which I have written. In the next line I have placed the length of the password that will be generated which is between 8 and 128 and anything less than or more than this number will not generate a password. The next line of code consist of all the numbers, symbols, lower and uppercase  which will appera once the lenght of password is done a random password will appear. If the user chooses a number symbol or other set of list the passowrd will based on that, the return will go through this process again if the user whishes to. The next set of line code will basically imprement the code and without this the whole code will not apply.
+# Password Generator
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+
+## Description
+This repository contains the code for a password generator that generates a password based on the user's chosen criteria. The code has been refactored to ensure its proper functioning.
+
+## Installation
+N/A
+
+## Usage
+- This application enables the user to specify the length, lowercase/uppercase, and inclusion of symbols for their generated password. Based on the user's selections, the application will generate a unique password.
+## Contribution
+Made by Parwiz Haqbien
+
+## ScreenShots
+https://drive.google.com/file/d/1sGj5QJxTBFQVMSB62vkndLZNpshNCFKw/view?usp=sharing
+
+website url: (https://parwiz-haqbien.github.io/Password-Generator/)

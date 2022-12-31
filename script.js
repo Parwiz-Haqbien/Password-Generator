@@ -6,28 +6,28 @@ function randomInt (min ,max) {
     max=min
     min=0
   }
-  var rand = Math.random()
-  return Math.floor(min*(1 - rand*max)+ rand*max)
+  var random = Math.random()
+  return Math.floor(min*(1 - random*max)+ random*max)
 }
 function getRandomItem (list) {
   return list [ randomInt(list.length)]
 }
 function generatePassword() {
-  var userInput = window.prompt("how long do you want your passowrd to be ?")
-  var passowrdLength =parseInt(userInput)
-  if (isNaN(passowrdLength)) {
+  var userInput = window.prompt("how long do you want your password to be ?")
+  var passwordLength =parseInt(userInput)
+  if (isNotNumber(passwordLength)) {
     window.alert("that's not a number!")
     return
   }
 
-if (passowrdLength <8 || passowrdLength > 128){
+if (passwordLength <8 || passwordLength > 128){
   window.alert ("Password length  must be between 8 and 128 characters")
   return
 }
-var userWantsNumber =window.confirm("Would you like to include numbers in  your passowrd?")
-var userWantsSymbols =window.confirm("Would you like to include symbols in  your passowrd?")
-var userWantsLowercase =window.confirm("Would you like to include lowercase letters in  your passowrd?")
-var userWantsUppercase =window.confirm("Would you like to include uppercase letters in  your passowrd?")
+var userWantsNumber = window.confirm("Would you like to include numbers in  your password?")
+var userWantsSymbols = window.confirm("Would you like to include symbols in  your password?")
+var userWantsLowercase = window.confirm("Would you like to include lowercase letters in  your password?")
+var userWantsUppercase = window.confirm("Would you like to include uppercase letters in  your password?")
 
 var numberList = ['0','1','2','3','4','5','6','7','8','9']
 var symbolsList = ['!','@','#','$','%','^','&','*']
@@ -55,7 +55,7 @@ if ( optionsCart === 0) {
   optionsCart.push(lowercaseList)
 }
 var generatePassword = ""
-for (var i= 0; i <passowrdLength; i++){
+for (var i = 0; i <passwordLength; i++){
   var randomList = getRandomItem(optionsCart)
   var randomChar = getRandomItem (randomList)
   generatePassword += randomChar
@@ -64,12 +64,12 @@ return generatePassword
 }
 
  function writePassword () {
-  var passowrd = generatePassword ();
+  var password = generatePassword ();
   var PasswordText = document.querySelector('#password');
 
-  PasswordText.value = passowrd;
+  PasswordText.value = password;
  }
-//adding event lsitener to generate button
-generateBtn.addEventListener('click',writePassword);
+//adding event listener to generate button
+generateBtn.addEventListener('click',writePassword);  
 
 
