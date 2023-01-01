@@ -19,7 +19,7 @@ N/A
 Made by Parwiz Haqbien
 
 ## ScreenShots/WebUrl
-ScreenShot (https://drive.google.com/file/d/1sGj5QJxTBFQVMSB62vkndLZNpshNCFKw/view?usp=sharing
-)
+![App Screenshot]( https://drive.google.com/file/d/1sGj5QJxTBFQVMSB62vkndLZNpshNCFKw/view?usp=sharing)
+
 
 website url: (https://parwiz-haqbien.github.io/Password-Generator/)
