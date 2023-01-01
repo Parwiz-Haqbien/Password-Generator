@@ -15,7 +15,7 @@ function getRandomItem (list) {
 function generatePassword() {
   var userInput = window.prompt("how long do you want your password to be ?")
   var passwordLength =parseInt(userInput)
-  if (isNotNumber(passwordLength)) {
+  if (isNaN(passwordLength)) {
     window.alert("that's not a number!")
     return
   }
